@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice set5</title>
+</head>
+<body>
+    
+    <script>
+        
+        let product = {
+            company : 'mango',
+            price : 880,
+            itemName : 'T-shirt',
+            'display-time' : '90 min'
+        };
+        let product2 = {
+            company : 'apricot',
+            price : 400,
+            itemName : 'T-shirt',
+            'display-time' : '40 min'
+        };
+        function isIdenticalProduct(product1, product2) {
+                if (typeof product1 !== 'object' || typeof product2 !== 'object') {
+                    console.warn('this is not a object')
+                    return false;
+                }
+                else if (product1 == product2) {
+                    return true;
+                }
+                else if (product1.itemName === product2.itemName &&
+                    product1.company === product2.company &&
+                    product1.price === product2.price
+                ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+
+        }
+       
+        let status = {
+            message : 'good job',
+            jobStatus : 'done',
+        }
+        let{message,jobStatus} = status;
+        console.log(message);
+        console.log(jobStatus);
+          
+        let isIdentical = isIdenticalProduct(product,product2);
+        console.log(isIdentical);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.class_button{
+    color: rgb(135, 86, 26);
+    border: 2px solid black;
+    background-color: beige;
+}
+.bag_button{
+    background-color: lightgreen;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+.wish_button{
+    padding: 5px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

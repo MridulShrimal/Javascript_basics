@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice-set4</title>
+</head>
+<body>
+
+    
+
+
+<script>
+    let age = 30;
+    let fair = 100;
+    let gender = 'male';
+
+    if(age < 5){
+        fair = 0;
+    }
+    else if(age <= 8 && gender === 'male'){
+        fair = (fair/2);
+    }
+    else if(age <= 8 && gender === 'female'){
+        fair = (fair/4);
+    }
+    else if(age > 65 && gender === 'male'){
+        fair = ((fair/100)*30);
+    }
+    else if(age > 65 && gender === 'female'){
+        fair = ((fair/100)*15);
+    }
+    else if(gender === 'female'){
+        fair = (fair/2);
+    }
+    else{
+        fair = fair;
+    }
+    console.log(fair);
+</script>    
+</body>
+</html>

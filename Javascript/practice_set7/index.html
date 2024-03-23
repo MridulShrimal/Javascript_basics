@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice set 7</title>
+</head>
+<body>
+   <script>
+    let arr = [5,6,78,56,787,56,45,34,665,86];
+    arr.push(7);
+    arr.unshift(4);
+    
+    function getElement(arr,index){
+        return arr[index-1];
+    }
+
+    console.log(getElement(arr,2));
+    arr1 = arr.slice(1,7);
+    console.log(arr1);
+    
+    for(let i = 0;i<10;i++){
+        console.log(10-i);
+    }
+    
+    arr3 = [1,-6,5,7,-98];
+    
+    for(let i =0;i<5;i++){
+        if(arr3[i] < 0){
+            continue;
+        }
+        console.log(arr3[i]);
+    }
+   
+    function isPrime(num){
+        for(i=2;i<num;i++){
+            if(num % i === 0){
+                return false;
+            }
+        }
+        return true
+    }
+
+    console.log(isPrime(7));
+    console.log(isPrime(89));
+    
+    let count = 0;
+    let a = 1;
+    while(a){
+        a++;
+        if(isPrime(a) == true){
+            count++;
+            console.log(a);
+            console.log(count);
+            if(count === 5){
+                console
+                break
+            }
+        }
+     }
+
+
+   </script> 
+</body>
+</html>

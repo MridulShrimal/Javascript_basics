@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>variables</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button class="bag_button" onclick="quantity = quantity+1;
+    document.querySelector('#cartSummary').innerText = `Your bag has ${quantity} items`;">Add to Bag</button>
+    <button class="wish_button" onclick="quantity = quantity-1;document.querySelector('#cartSummary').innerText = `Your bag has ${quantity} items`;">add to Wishlist</button>
+    <button class="bag_button" onclick="quantity = quantity+2;document.querySelector('#cartSummary').innerText = `Your bag has ${quantity} items`;">Add 1+1 sale item</button>
+    <h2 id="cartSummary"></h2>
+<script src="index.js"></script>
+</body>
+</html>

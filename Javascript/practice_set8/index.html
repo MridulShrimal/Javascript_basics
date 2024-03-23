@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice set 8</title>
+    <style>
+        .my-button{
+            font-size: 20px;
+            height: 40px;
+            width: 100px;
+            border: none;
+            background-color: beige;
+            border-radius: 4px;
+        }
+        .double{
+            font-size: 40px;
+            height: 80px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button class="my-button">click</button>
+    <script>
+    // arr = [1,23,4,5,6,7,8,9,10];
+    // let x = 0;
+    // arr.forEach(Number => {
+    //     x += Number;
+    // });
+    // console.log(x);
+    
+    
+    function doubleSize(){
+        let buttonElement = document.querySelector('.my-button');
+        buttonElement.classList.add('double');}
+
+        document.querySelector('.my-button').addEventListener('click',event =>{
+            setTimeout(doubleSize, 2000);
+        });
+
+     
+   
+    // intervelId = setTimeout(buttonElement.classList.add('sst'),2000);
+    //   buttonElement.addEventListener('click',intervelId);
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    //   multiply = (num1,num2) => {
+    //         return console.log(num1*num2);
+    //     };
+       
+
+        
+    //  (wrong)runTwice = (function(){}) => {
+        //     func();
+        //     func();
+        // };
+        // greeting = () => console.log('morning');
+
+        // (right)runTwice = inputfunction => {
+        //     inputfunction();
+        //     inputfunction();
+        // }
+        // runTwice(greeting);
+
+    </script>
+</body>
+</html>
